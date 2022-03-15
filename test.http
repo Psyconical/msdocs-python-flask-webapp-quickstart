@@ -1,0 +1,20 @@
+###
+
+# Example POST Requet to send a URL to server
+
+@test_url = https://www.airplane-pictures.net
+
+POST http://localhost:7071/api/get_images
+Accept: application/json
+Content-Type: application/json
+Access-Control-Allow-Origin: *
+
+{
+    "text": "{{test_url}}"
+}
+
+###
+
+# Example GET Request to send URL to server
+
+GET http://localhost:7071/api/get_images?url={{test_url}}
