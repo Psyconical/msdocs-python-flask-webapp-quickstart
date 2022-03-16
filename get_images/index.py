@@ -31,8 +31,8 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     
 # Detect the URL from the parameters at end of request (?url=[URL])
     websiteUrl = req.params.get('url')
-    # print('Detected URL:')
-    # print(websiteUrl)
+    print('Detected URL:')
+    print(websiteUrl)
     
 # Run Process
     imagelist = fetch_images_from_url(websiteUrl, 'hello')
@@ -102,4 +102,5 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
                 # print("The similarity percentage is: %s", str(c))
                 
     headers = {"Access-Control-Allow-Origin": "*"}
+    
     return func.HttpResponse(json.dumps({ "images": imagelist}), headers=headers)

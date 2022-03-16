@@ -6,8 +6,15 @@ numpy
 requests
 bs4
 azure-storage-file-share
+azure-storage-blob
 azure-identity
+azure-functions
 python-dotenv
+Pillow
+tqdm
+urllib3
+bytesbufio
+Arrays
 # tensorflow
 # gunicorn==20.0.4
 # pandas==1.2.1
