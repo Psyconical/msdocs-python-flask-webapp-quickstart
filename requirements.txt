@@ -1,1 +1,18 @@
-Flask==2.0.2
+# To ensure app dependencies are ported from your virtual environment/host machine into your container, run 'pip freeze > requirements.txt' in the terminal to overwrite this file
+gunicorn
+scipy
+pandas
+numpy
+requests
+bs4
+azure-storage-file-share
+azure-identity
+python-dotenv
+# tensorflow
+# gunicorn==20.0.4
+# pandas==1.2.1
+# numpy==1.19.3
+# tensorflow==2.4.1
+# scipy==1.4.1
+# requests==2.22.0
+# bs4 == 0.0.1
