@@ -102,4 +102,4 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
                 # print("The similarity percentage is: %s", str(c))
                 
     headers = {"Access-Control-Allow-Origin": "*"}
-    return func.HttpResponse([json.dumps({ "images": imagelist})], headers=headers)
+    return func.HttpResponse(json.dumps({ "images": imagelist}), headers=headers)
